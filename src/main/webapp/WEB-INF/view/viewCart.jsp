@@ -20,7 +20,7 @@
     <div>
         <c:if test="${_userId != null}">
             <h3>${_userName}님 반가워요!</h3>
-            <a href="/logout">로그아웃</a>
+            <a href="/logout?_returnUrl=/main">로그아웃</a>
         </c:if>
         <c:if test="${_userId == null}">
             <a href="/login?_returnUrl=/cart">로그인</a>
